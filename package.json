@@ -1,20 +1,21 @@
 {
-  "name": "meu-jogo-html",
-  "productName": "Meu Jogo HTML",
+  "name": "casa-pc-gamer",
+  "productName": "Casa PC Gamer",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "dist": "electron-builder --win --x64"
+    "dist": "electron-builder --win --x64 --publish never"
   },
   "devDependencies": {
     "electron": "^33.0.0",
     "electron-builder": "^25.1.8"
   },
   "build": {
-    "appId": "com.exemplo.meujogohtml",
+    "appId": "com.maxmilimi7.casapcgamer",
     "win": {
       "target": "nsis"
     },
+    "publish": "never",
     "files": [
       "**/*",
       "!**/.*"
