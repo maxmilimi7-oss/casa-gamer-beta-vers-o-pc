@@ -1,0 +1,23 @@
+{
+  "name": "meu-jogo-html",
+  "productName": "Meu Jogo HTML",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dist": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.exemplo.meujogohtml",
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "**/*",
+      "!**/.*"
+    ]
+  }
+}
